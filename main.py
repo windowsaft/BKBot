@@ -1,34 +1,37 @@
 # Import the required modules
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
+from selenium.webdriver.chrome.service import Service
+from webdriver_manager.chrome import ChromeDriverManager
 from functions import *
 import time
 import re
+
   
 # Main Function
 if __name__ == '__main__':
   
     # Provide the email and password
-  
-    options = webdriver.ChromeOptions()
-    #options.add_argument("--start-maximized")
+    options = Options()
+    options.add_argument("start-maximized")
     options.add_argument('--log-level=3')
-  
+    
     # Provide the path of chromedriver present on your system.
-    driver = webdriver.Chrome(executable_path=".\\chromedriver_win32\\chromedriver.exe",
-                              chrome_options=options)
+    driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()),
+                                options=options)
+
     driver.set_window_size(500,400)
   
     # Send a get request to the url
     driver.get('https://bk-feedback-de.com')
 
     # Page 1
-    rcode = 11609
+    rcode = 15662
     driver.find_element("id", 'QR~QID4').send_keys(rcode)
     time.sleep(2)
     driver.find_element("id", 'NextButton').click()
 
     # Page 2
-    dates = "26102022"
     time.sleep(3)
     datepicker(_driver = driver, _day = 26)
     time.sleep(3)
@@ -304,6 +307,8 @@ if __name__ == '__main__':
     m = re.split("\s", code)
     m = m[41][0:7]
     print (m)
+
+    driver.quit()
         
     
     
