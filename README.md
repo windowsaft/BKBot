@@ -20,14 +20,16 @@
   <a href="https://github.com/windowsaft/BKBot/issues/new?assignees=&labels=question&template=04_SUPPORT_QUESTION.md&title=support%3A+">Ask a Question</a>
 </div>
 
-<div align="center">
-  
-  [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 
-</div>
 <div align="center">
 
+<br />
+
+[![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
 [![Project license](https://img.shields.io/github/license/windowsaft/BKBot?style=for-the-badge)](LICENSE)
+
+<br />
+
 [![code with love by windowsaft](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-windowsaft-ff1414.svg?style=for-the-badge)](https://github.com/windowsaft)
 
 </div>
