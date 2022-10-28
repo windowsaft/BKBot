@@ -24,7 +24,11 @@
 <br/>
 
 [![Python](https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54)](https://www.python.org/)
-[![Project license](https://img.shields.io/github/license/windowsaft/BKBot?style=for-the-badge)](LICENSE)[![code with love by windowsaft](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-windowsaft-ff1414.svg?style=for-the-badge)](https://github.com/windowsaft)
+
+<br />
+
+[![Project license](https://img.shields.io/github/license/windowsaft/BKBot?style=for-the-badge)](LICENSE)
+[![code with love by windowsaft](https://img.shields.io/badge/%3C%2F%3E%20with%20%E2%99%A5%20by-windowsaft-ff1414.svg?style=for-the-badge)](https://github.com/windowsaft)
 
 </div>
 
@@ -63,7 +67,6 @@
 
 ```sh
 pip3 install selenium
-
 pip3 install webdriver_manager
 pip3 install regex
 ```
